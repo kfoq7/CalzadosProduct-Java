@@ -5,7 +5,7 @@ public class Empleado {
     private String codigo;
     private String nombre;
     private String apellido;
-    private String estadoCivil; // CASADO - SOLTERO - DIVORCIADO - VIUDO
+    private int estadoCivil; // CASADO - SOLTERO - DIVORCIADO - VIUDO
     private int numeroHijos;
     private float sueldo;
     private float sueldoNeto;
@@ -13,7 +13,7 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String codigo, String nombre, String apellido, String estadoCivil, int numeroHijos, float sueldo, float sueldoNeto) {
+    public Empleado(String codigo, String nombre, String apellido, int estadoCivil, int numeroHijos, float sueldo, float sueldoNeto) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -55,11 +55,11 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public String getEstadoCivil() {
+    public int getEstadoCivil() {
         return estadoCivil;
     }
 
-    public void setEstadoCivil(String estadoCivil) {
+    public void setEstadoCivil(int estadoCivil) {
         this.estadoCivil = estadoCivil;
     }
 
